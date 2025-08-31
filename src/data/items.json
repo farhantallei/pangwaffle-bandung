@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "name": "Pang Waffle Original",
+    "image": "/images/classic_original.jpg",
+    "price": 19000,
+    "category": "Classic"
+  },
+  {
+    "id": "2",
+    "name": "Pang Waffle Chocolate",
+    "image": "/images/classic_chocolate.jpg",
+    "price": 23000,
+    "category": "Classic"
+  },
+  {
+    "id": "3",
+    "name": "Pang Waffle Srikaya",
+    "image": "/images/classic_srikaya.jpg",
+    "price": 23000,
+    "category": "Classic"
+  },
+  {
+    "id": "4",
+    "name": "Pang Waffle Special",
+    "image": "/images/classic_special.jpg",
+    "price": 23000,
+    "category": "Classic"
+  },
+  {
+    "id": "5",
+    "name": "Pang Waffle Strawberry",
+    "image": "/images/classic_strawberry.jpg",
+    "price": 23000,
+    "category": "Classic"
+  },
+  {
+    "id": "6",
+    "name": "Pang Waffle Mix",
+    "image": "/images/classic_mix.jpg",
+    "price": 23000,
+    "category": "Classic"
+  },
+  {
+    "id": "7",
+    "name": "Pang Waffle Red Velvet Original",
+    "image": "/images/redvelvet_original.jpg",
+    "price": 22000,
+    "category": "Red Velvet"
+  },
+  {
+    "id": "8",
+    "name": "Pang Waffle Red Velvet Chocolate",
+    "image": "/images/redvelvet_chocolate.jpg",
+    "price": 26000,
+    "category": "Red Velvet"
+  },
+  {
+    "id": "9",
+    "name": "Pang Waffle Red Velvet Mix",
+    "image": "/images/redvelvet_mix.jpg",
+    "price": 26000,
+    "category": "Red Velvet"
+  },
+  {
+    "id": "10",
+    "name": "Pang Waffle Pandan Original",
+    "image": "/images/pandan_original.jpg",
+    "price": 22000,
+    "category": "Pandan"
+  },
+  {
+    "id": "11",
+    "name": "Pang Waffle Pandan Srikaya",
+    "image": "/images/pandan_srikaya.jpg",
+    "price": 26000,
+    "category": "Pandan"
+  }
+]
+
