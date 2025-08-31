@@ -8,6 +8,7 @@
     "email": "farhanpradana55@gmail.com",
     "url": "https://github.com/farhantallei"
   },
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

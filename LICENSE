@@ -1,0 +1,74 @@
+Pang Waffle Bandung Proprietary License v1.0 (ID/EN)
+
+Copyright (c) 2025 Farhan Pradana Tallei. All rights reserved.
+
+INDONESIAN (Mengikat)
+1. Definisi
+   - “Perangkat Lunak” berarti seluruh kode sumber, kode hasil kompilasi, konfigurasi, aset, dan dokumentasi dalam repositori “pangwaffle-bandung”.
+   - “Pemberi Lisensi” berarti pemegang hak cipta yang tercantum di atas.
+   - “Penerima Lisensi” berarti pihak yang menerima izin tertulis dari Pemberi Lisensi untuk menggunakan Perangkat Lunak ini.
+
+2. Pemberian Lisensi (Terbatas)
+   Kepada Penerima Lisensi, Pemberi Lisensi memberikan lisensi non-eksklusif, tidak dapat dipindahtangankan, tidak dapat disublisensikan, dan dapat dicabut kapan saja untuk:
+   (a) menggunakan, menjalankan, membangun, dan memodifikasi Perangkat Lunak untuk kebutuhan internal Penerima Lisensi; dan
+   (b) membuat salinan wajar untuk tujuan pengujian, backup, dan deployment internal.
+
+3. Pembatasan
+   Kecuali secara tegas diizinkan dalam Perjanjian tertulis terpisah, Penerima Lisensi dilarang untuk:
+   (a) mendistribusikan, memublikasikan, menjual, menyewakan, meminjamkan, atau membuat tersedia Perangkat Lunak kepada pihak ketiga; 
+   (b) menawarkan Perangkat Lunak sebagai layanan (SaaS) atau sebagai bagian dari produk/layanan komersial apa pun; 
+   (c) membuat karya turunan untuk distribusi eksternal; 
+   (d) menghapus atau mengubah pemberitahuan hak cipta, merek dagang, atau pemberitahuan lain; 
+   (e) merekayasa balik, mendekompilasi, atau membongkar, kecuali sejauh diizinkan oleh hukum yang berlaku.
+
+4. Kepemilikan
+   Perangkat Lunak dilisensikan, bukan dijual. Pemberi Lisensi mempertahankan seluruh hak, kepemilikan, dan kepentingan atas Perangkat Lunak, serta seluruh hak yang tidak secara tegas diberikan.
+
+5. Komponen Pihak Ketiga
+   Perangkat Lunak dapat menyertakan komponen pihak ketiga yang dilisensikan secara terpisah (mis. React, Vite, Tailwind, dll.). Hak dan kewajiban atas komponen tersebut diatur oleh lisensi masing-masing komponen. Penerima Lisensi wajib mematuhi lisensi-lisensi tersebut dan mempertahankan pemberitahuan yang diwajibkan.
+
+6. Materi Merek dan Konten
+   Nama dagang, logo, gambar, dan materi branding (termasuk konten dalam folder “public/”) dilindungi dan tidak boleh digunakan di luar penggunaan internal yang diizinkan tanpa persetujuan tertulis terpisah dari pemilik merek terkait.
+
+7. Kerahasiaan
+   Jika Perangkat Lunak atau informasinya bersifat tidak publik, Penerima Lisensi wajib menjaga kerahasiaan dan tidak mengungkapkan kepada pihak ketiga tanpa izin tertulis Pemberi Lisensi.
+
+8. Umpan Balik
+   Pemberi Lisensi bebas menggunakan umpan balik, saran, atau ide yang diberikan terkait Perangkat Lunak tanpa kewajiban apa pun kepada Penerima Lisensi.
+
+9. Penafian Jaminan
+   PERANGKAT LUNAK DISEDIAKAN “SEBAGAIMANA ADANYA” TANPA JAMINAN APA PUN, TERSURAT MAUPUN TERSIRAT, TERMASUK NAMUN TIDAK TERBATAS PADA KELAYAKAN DIPERDAGANGKAN, KECOCOKAN UNTUK TUJUAN TERTENTU, DAN TIDAK ADANYA PELANGGARAN.
+
+10. Batasan Tanggung Jawab
+   SEJAUH DIIZINKAN OLEH HUKUM, PEMBERI LISENSI TIDAK BERTANGGUNG JAWAB ATAS KERUSAKAN TIDAK LANGSUNG, INSIDENTAL, KHUSUS, KONSEKUENSIAL, KEHILANGAN LABA, DATA, ATAU KEGAGALAN BISNIS, MESKIPUN TELAH DIBERITAHU TENTANG KEMUNGKINAN TERSEBUT. TANGGUNG JAWAB TOTAL PEMBERI LISENSI DIBATASI PADA JUMLAH YANG DIBAYARKAN (JIKA ADA) UNTUK LISENSI INI.
+
+11. Jangka Waktu dan Pengakhiran
+   Lisensi ini berlaku hingga diakhiri. Lisensi akan berakhir otomatis jika Penerima Lisensi melanggar ketentuan ini. Setelah berakhir, semua penggunaan harus dihentikan dan semua salinan internal yang tidak diperlukan harus dimusnahkan.
+
+12. Hukum yang Berlaku
+   Lisensi ini diatur oleh hukum Republik Indonesia, tanpa memperhatikan pertentangan kaidah hukumnya. Sengketa akan diselesaikan di pengadilan yang berwenang di Indonesia.
+
+13. Lain-lain
+   Lisensi ini merupakan keseluruhan perjanjian terkait Perangkat Lunak antara para pihak. Perubahan hanya berlaku jika dibuat secara tertulis dan ditandatangani Pemberi Lisensi.
+
+Kontak Lisensi: farhanpradana55 [at] gmail [dot] com
+
+—
+
+ENGLISH (Informative Translation)
+1. Definitions: “Software” means all code, build artifacts, assets, and docs in this repository; “Licensor” is the copyright holder above; “Licensee” is the party granted written permission to use the Software.
+2. Grant: A limited, non-exclusive, non-transferable, non-sublicensable, revocable license to use, run, build, and modify the Software for Licensee’s internal purposes and to make reasonable copies for testing/backup/internal deployment.
+3. Restrictions: No distribution, publication, resale, lending, offering as a service, or external derivative works; no removal of notices; no reverse engineering except as permitted by law.
+4. Ownership: The Software is licensed, not sold. All rights reserved by Licensor.
+5. Third-Party: Third-party components are under their own licenses; you must comply with them.
+6. Brands/Content: Names, logos, images, and branding are protected; separate permission is required for external use.
+7. Confidentiality: Non-public information must be kept confidential.
+8. Feedback: May be used by Licensor without obligation.
+9. Warranty: Provided “AS IS” without warranties of any kind.
+10. Liability: Licensor is not liable for indirect/special/consequential damages; total liability limited to fees paid (if any).
+11. Termination: Ends upon breach; cease use and destroy unnecessary copies upon termination.
+12. Governing Law: Laws of the Republic of Indonesia.
+13. Misc: Entire agreement; changes must be in writing signed by Licensor.
+
+All rights reserved.
+
