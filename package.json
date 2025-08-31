@@ -1,8 +1,13 @@
 {
-  "name": "pangwaffle",
+  "name": "pangwaffle-bandung",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": {
+    "name": "Farhan Pradana Tallei",
+    "email": "farhanpradana55@gmail.com",
+    "url": "https://github.com/farhantallei"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
