@@ -54,11 +54,11 @@ export default function Header() {
               )}
             </Button>
           </SheetTrigger>
-          <SheetContent className="w-full sm:max-w-md">
-            <SheetHeader>
+          <SheetContent className="w-full sm:max-w-md gap-0">
+            <SheetHeader className="border-b">
               <SheetTitle>Keranjang Belanja</SheetTitle>
             </SheetHeader>
-            <div className="mt-6 space-y-4">
+            <div className="space-y-4 overflow-y-auto pb-12 pt-4">
               {cart.length === 0 ? (
                 <p className="text-center text-muted-foreground py-8">
                   Keranjang masih kosong
