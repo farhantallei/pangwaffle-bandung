@@ -72,4 +72,4 @@ Struktur Singkat
 - Utilitas dan tipe: `src/lib/utils.ts`, `src/types.ts`
 
 Lisensi
-- Proprietary: Pang Waffle Proprietary License v1.0 — lihat `LICENSE`.
+- Proprietary: Pang Waffle Bandung Proprietary License v1.0 — lihat `LICENSE`.
