@@ -6,10 +6,16 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatPrice(price: number) {
-  return new Intl.NumberFormat("id-ID", {
+  let formatted = new Intl.NumberFormat("id-ID", {
     style: "currency",
     currency: "IDR",
   }).format(price)
+
+  if (formatted.startsWith("Rp") && !formatted.startsWith("Rp ")) {
+    formatted = formatted.replace("Rp", "Rp ")
+  }
+
+  return formatted
 }
 
 export function convertPhonePrefix(phone: string, format: "08" | "62" | "+62") {
