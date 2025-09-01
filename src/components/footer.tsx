@@ -75,11 +75,11 @@ export default function Footer() {
             <div className="space-y-2 text-white/90">
               <div className="flex justify-between">
                 <span>Senin - Jumat</span>
-                <span>09:00 - 21:00</span>
+                <span>09:00 - 20:00</span>
               </div>
               <div className="flex justify-between">
                 <span>Sabtu - Minggu</span>
-                <span>09:00 - 21:00</span>
+                <span>09:00 - 20:00</span>
               </div>
             </div>
             {/* <div className="pt-4"> */}

@@ -12,7 +12,7 @@ export default function Headline() {
           Hadir di Bandung!
         </h3>
         <p className="text-sm text-foreground/80 mb-6 text-pretty">
-          Thailand {profile.NAME}: waffle isi keju mozzarella, toping es krim
+          Thailand {profile.NAME}: waffle isi keju mozzarella, topping es krim
           vanila, dan saus karamel. Kombinasi sempurna untuk momen manis Anda!
         </p>
 
