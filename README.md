@@ -5,7 +5,7 @@ Website katalog + pemesanan sederhana untuk Thailand Pang Waffle cabang Mars Uta
 Demo: https://pangwaffle-bandung.pages.dev
 
 Fitur
-- Katalog menu: Classic, Red Velvet, Pandan, dengan gambar dan harga.
+- Katalog menu: Original, Red Velvet, Pandan, dengan gambar dan harga.
 - Filter kategori: pilih “Semua” atau per kategori.
 - Keranjang belanja: tambah/kurangi, hapus item, jumlah total dan subtotal.
 - Checkout via WhatsApp: form pemesan (nama, nomor HP, metode pickup/GoSend) dengan validasi dasar; pesan WA terformat otomatis.
