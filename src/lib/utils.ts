@@ -11,9 +11,7 @@ export function formatPrice(price: number) {
     currency: "IDR",
   }).format(price)
 
-  if (formatted.startsWith("Rp") && !formatted.startsWith("Rp ")) {
-    formatted = formatted.replace("Rp", "Rp ")
-  }
+  formatted = formatted.replace(/^Rp\s?/, "Rp ")
 
   return formatted
 }
