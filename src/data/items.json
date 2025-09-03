@@ -75,6 +75,33 @@
     "image": "/images/pandan_srikaya.jpg",
     "price": 26000,
     "category": "Pandan"
+  },
+  {
+    "id": "12",
+    "name": "Pang Waffle Ice Cream Sprinkle Choco",
+    "image": "/images/ice_cream_sprinkle_choco.jpg",
+    "price": 25000,
+    "category": "Ice Cream"
+  },
+  {
+    "id": "13",
+    "name": "Pang Waffle Ice Cream Caramel Biscuit",
+    "image": "/images/ice_cream_caramel_biscuit.jpg",
+    "price": 25000,
+    "category": "Ice Cream"
+  },
+  {
+    "id": "14",
+    "name": "Pang Waffle Ice Cream Creamy Srikaya",
+    "image": "/images/ice_cream_creamy_srikaya.jpg",
+    "price": 25000,
+    "category": "Ice Cream"
+  },
+  {
+    "id": "15",
+    "name": "Pang Waffle Ice Cream Cookies and Cream",
+    "image": "/images/ice_cream_cookies_cream.jpg",
+    "price": 25000,
+    "category": "Ice Cream"
   }
 ]
-

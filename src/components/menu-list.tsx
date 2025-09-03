@@ -50,7 +50,8 @@ function ItemCard({ item }: { item: MenuItem }) {
           className={cn(
             "absolute top-2 right-2 bg-accent text-accent-foreground",
             item.category === "Red Velvet" && "bg-rose-700 text-white",
-            item.category === "Pandan" && "bg-lime-600 text-white"
+            item.category === "Pandan" && "bg-lime-600 text-white",
+            item.category === "Ice Cream" && "bg-amber-200 text-foreground"
           )}>
           {item.category}
         </Badge>
