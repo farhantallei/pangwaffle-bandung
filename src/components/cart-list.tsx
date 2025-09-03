@@ -4,6 +4,7 @@ import { Button } from "./ui/button"
 import { MinusIcon, PlusIcon, XIcon } from "lucide-react"
 import storeItems from "@/data/items.json"
 import type { CartItem as CartItemType } from "@/types"
+import { useAnalyticsContext } from "@/providers/analytics-provider"
 
 export default function CartList() {
   const { cart, getTotalPrice, handleCheckout } = useCartContext()
@@ -33,6 +34,7 @@ export default function CartList() {
 }
 
 function CartItem({ id, quantity }: CartItemType) {
+  const { trackEvent } = useAnalyticsContext()
   const { updateQuantity, removeFromCart } = useCartContext()
   const item = storeItems.find((item) => item.id === id)
   if (!item) return null
@@ -56,7 +58,12 @@ function CartItem({ id, quantity }: CartItemType) {
             variant="outline"
             size="icon"
             className="h-6 w-6 bg-transparent"
-            onClick={() => updateQuantity(item.id, quantity - 1)}>
+            onClick={() => {
+              updateQuantity(item.id, quantity - 1)
+              if (quantity - 1 === 0) {
+                trackEvent("remove_from_cart", "cart", item.name)
+              }
+            }}>
             <MinusIcon className="h-3 w-3" />
           </Button>
           <span className="text-sm font-medium w-8 text-center">
@@ -75,7 +82,10 @@ function CartItem({ id, quantity }: CartItemType) {
         variant="ghost"
         size="icon"
         className="h-6 w-6"
-        onClick={() => removeFromCart(item.id)}>
+        onClick={() => {
+          removeFromCart(item.id)
+          trackEvent("remove_from_cart", "cart", item.name)
+        }}>
         <XIcon className="h-3 w-3" />
       </Button>
     </div>

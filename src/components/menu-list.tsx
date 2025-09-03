@@ -7,6 +7,7 @@ import { cn, formatPrice } from "@/lib/utils"
 import { useCartContext } from "@/providers/cart-provider"
 import { useFilterContext } from "@/providers/filter-provider"
 import menuItems from "@/data/items.json"
+import { useAnalyticsContext } from "@/providers/analytics-provider"
 
 export default function MenuList() {
   const { selectedCategory } = useFilterContext()
@@ -33,6 +34,7 @@ export default function MenuList() {
 }
 
 function ItemCard({ item }: { item: MenuItem }) {
+  const { trackEvent } = useAnalyticsContext()
   const { getItemQuantity, addToCart, updateQuantity } = useCartContext()
   const quantity = getItemQuantity(item.id)
 
@@ -67,7 +69,10 @@ function ItemCard({ item }: { item: MenuItem }) {
         </div>
         {quantity === 0 ? (
           <Button
-            onClick={() => addToCart(item)}
+            onClick={() => {
+              addToCart(item)
+              trackEvent("add_to_cart", "menu", item.name)
+            }}
             variant="secondary"
             className="w-full">
             <PlusIcon className="h-4 w-4" />
@@ -80,7 +85,12 @@ function ItemCard({ item }: { item: MenuItem }) {
               variant="outline"
               size="icon"
               aria-label="Upvote"
-              onClick={() => updateQuantity(item.id, quantity - 1)}>
+              onClick={() => {
+                updateQuantity(item.id, quantity - 1)
+                if (quantity - 1 === 0) {
+                  trackEvent("remove_from_cart", "menu", item.name)
+                }
+              }}>
               <MinusIcon size={16} aria-hidden="true" />
             </Button>
             <span className="flex items-center border w-16 justify-center text-muted-foreground/80 px-3 text-sm font-medium">

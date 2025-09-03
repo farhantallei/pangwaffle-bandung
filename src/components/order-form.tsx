@@ -10,6 +10,7 @@ import { z } from "zod/v4"
 import type { MenuItem, OrderForm as OrderFormType } from "@/types"
 import profile from "@/constants/profile"
 import storeItems from "@/data/items.json"
+import { useAnalyticsContext } from "@/providers/analytics-provider"
 
 type OrderSummary = {
   items: (MenuItem & { quantity: number })[]
@@ -20,15 +21,19 @@ type OrderSummary = {
 
 const message = (order: OrderSummary) => `Halo, saya ingin memesan:\n
 ${order.items
-    .map(
-      (item, i) =>
-        `${i + 1}. ${item.name} x${item.quantity} = ${formatPrice(item.price * item.quantity)}`
-    )
-    .join("\n")}
+  .map(
+    (item, i) =>
+      `${i + 1}. ${item.name} x${item.quantity} = ${formatPrice(
+        item.price * item.quantity
+      )}`
+  )
+  .join("\n")}
 Total: ${formatPrice(order.total)}\n
 Nama: ${order.customer.name}
 Nomor HP: ${order.customer.phone}
-Metode Pengambilan: ${order.customer.deliveryMethod === "pickup" ? "Pickup di Toko" : "GoSend"}
+Metode Pengambilan: ${
+  order.customer.deliveryMethod === "pickup" ? "Pickup di Toko" : "GoSend"
+}
 `
 
 interface OrderFormProps {
@@ -36,6 +41,7 @@ interface OrderFormProps {
 }
 
 export default function OrderForm({ onSubmit }: OrderFormProps) {
+  const { trackEvent } = useAnalyticsContext()
   const {
     cart,
     orderForm,
@@ -102,12 +108,17 @@ export default function OrderForm({ onSubmit }: OrderFormProps) {
 
     // Create WhatsApp message
     const whatsappMessage = encodeURIComponent(message(orderSummary))
-    const whatsappURL = `https://wa.me/${convertPhonePrefix(profile.PHONE, "62")}?text=${whatsappMessage}`
+    const whatsappURL = `https://wa.me/${convertPhonePrefix(
+      profile.PHONE,
+      "62"
+    )}?text=${whatsappMessage}`
 
     // Open WhatsApp
     window.open(whatsappURL, "_blank")
 
     resetCart()
+
+    trackEvent("begin_checkout", "order_form", orderForm.name, getTotalPrice())
 
     onSubmit?.(orderSummary)
   }
@@ -131,7 +142,7 @@ export default function OrderForm({ onSubmit }: OrderFormProps) {
             className={cn(
               "pl-10 bg-background text-foreground",
               errors.name &&
-              "border-destructive focus-visible:ring-destructive/20 focus-visible:ring-offset-destructive/20 focus-visible:border-destructive"
+                "border-destructive focus-visible:ring-destructive/20 focus-visible:ring-offset-destructive/20 focus-visible:border-destructive"
             )}
             value={orderForm.name}
             onChange={(e) => {
@@ -166,7 +177,7 @@ export default function OrderForm({ onSubmit }: OrderFormProps) {
             className={cn(
               "pl-10 bg-background text-foreground",
               errors.phone &&
-              "border-destructive focus-visible:ring-destructive/20 focus-visible:ring-offset-destructive/20 focus-visible:border-destructive"
+                "border-destructive focus-visible:ring-destructive/20 focus-visible:ring-offset-destructive/20 focus-visible:border-destructive"
             )}
             value={orderForm.phone}
             onChange={(e) => {

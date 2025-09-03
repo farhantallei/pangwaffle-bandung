@@ -7,24 +7,27 @@ import MenuList from "./components/menu-list"
 import Footer from "./components/footer"
 import CartProvider from "./providers/cart-provider"
 import FilterProvider from "./providers/filter-provider"
+import AnalyticsProvider from "./providers/analytics-provider"
 
 export default function App() {
   return (
-    <CartProvider>
-      <FilterProvider>
-        <div className="min-h-screen bg-background">
-          <Header />
-          <Headline />
+    <AnalyticsProvider>
+      <CartProvider>
+        <FilterProvider>
+          <div className="min-h-screen bg-background">
+            <Header />
+            <Headline />
 
-          <Categories />
-          <MenuList />
+            <Categories />
+            <MenuList />
 
-          {/* <Reviews /> */}
-          {/* <InstagramPosts /> */}
+            {/* <Reviews /> */}
+            {/* <InstagramPosts /> */}
 
-          <Footer />
-        </div>
-      </FilterProvider>
-    </CartProvider>
+            <Footer />
+          </div>
+        </FilterProvider>
+      </CartProvider>
+    </AnalyticsProvider>
   )
 }
