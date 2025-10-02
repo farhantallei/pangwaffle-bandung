@@ -22,8 +22,10 @@ export default function AnalyticsProvider({
   children,
 }: AnalyticsProviderProps) {
   useEffect(() => {
-    ReactGA.initialize(import.meta.env.VITE_GA_TRACKING_ID || "")
-    ReactGA.send({ hitType: "pageview", page: "/", title: "Home" })
+    if (import.meta.env.VITE_GA_TRACKING_ID) {
+      ReactGA.initialize(import.meta.env.VITE_GA_TRACKING_ID)
+      ReactGA.send({ hitType: "pageview", page: "/", title: "Home" })
+    }
   }, [])
 
   function trackEvent(
@@ -32,7 +34,9 @@ export default function AnalyticsProvider({
     label: string,
     value?: number
   ) {
-    ReactGA.event({ action, category, label, value })
+    if (import.meta.env.VITE_GA_TRACKING_ID) {
+      ReactGA.event({ action, category, label, value })
+    }
   }
 
   return (
