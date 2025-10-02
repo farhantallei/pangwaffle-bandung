@@ -1,7 +1,7 @@
 import { Button } from "./ui/button"
 import { useFilterContext } from "@/providers/filter-provider"
 
-const categories = ["All", "Original", "Red Velvet", "Pandan", "Ice Cream"]
+const categories = ["All", "Original", "Red Velvet", "Pandan", "Ice Cream", "Drinks"]
 
 export default function Categories() {
   const { selectedCategory, setSelectedCategory } = useFilterContext()
@@ -16,8 +16,8 @@ export default function Categories() {
               variant={selectedCategory === category ? "default" : "outline"}
               size="sm"
               className={`whitespace-nowrap ${selectedCategory === category
-                  ? "bg-primary hover:bg-primary/90 text-white"
-                  : "text-foreground"
+                ? "bg-primary hover:bg-primary/90 text-white"
+                : "text-foreground"
                 }`}
               onClick={() => setSelectedCategory(category)}>
               {category === "All" ? "Semua" : category}

@@ -103,5 +103,33 @@
     "image": "/images/ice_cream_cookies_cream.jpg",
     "price": 25000,
     "category": "Ice Cream"
+  },
+  {
+    "id": "16",
+    "name": "Mango Yakult",
+    "image": "/images/drinks_mango_yakult.png",
+    "price": 13000,
+    "category": "Drinks"
+  },
+  {
+    "id": "18",
+    "name": "Lychee Yakult",
+    "image": "/images/drinks_lychee_yakult.png",
+    "price": 13000,
+    "category": "Drinks"
+  },
+  {
+    "id": "19",
+    "name": "Taro",
+    "image": "/images/drinks_taro.png",
+    "price": 15000,
+    "category": "Drinks"
+  },
+  {
+    "id": "20",
+    "name": "Vanilla Regal",
+    "image": "/images/drinks_vanilla_regal.png",
+    "price": 15000,
+    "category": "Drinks"
   }
 ]
