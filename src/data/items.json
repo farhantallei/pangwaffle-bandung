@@ -43,7 +43,7 @@
   },
   {
     "id": "7",
-    "name": "Pang Waffle Red Velvet Original",
+    "name": "Pang Waffle Red Velvet",
     "image": "/images/redvelvet_original.jpg",
     "price": 22000,
     "category": "Red Velvet"
@@ -64,7 +64,7 @@
   },
   {
     "id": "10",
-    "name": "Pang Waffle Pandan Original",
+    "name": "Pang Waffle Pandan",
     "image": "/images/pandan_original.jpg",
     "price": 22000,
     "category": "Pandan"
