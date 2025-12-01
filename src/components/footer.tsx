@@ -73,13 +73,9 @@ export default function Footer() {
               Jam Operasional
             </h4>
             <div className="space-y-2 text-white/90">
-              <div className="flex justify-between">
-                <span>Senin - Jumat</span>
-                <span>09:00 - 20:00</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Sabtu - Minggu</span>
-                <span>09:00 - 20:00</span>
+              <div className="flex flex-col">
+                <span>Senin - Minggu</span>
+                <span>10:00 - 19:00 WIB</span>
               </div>
             </div>
             {/* <div className="pt-4"> */}

@@ -9,6 +9,8 @@ export function formatPrice(price: number) {
   let formatted = new Intl.NumberFormat("id-ID", {
     style: "currency",
     currency: "IDR",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
   }).format(price)
 
   formatted = formatted.replace(/^Rp\s?/, "Rp ")
