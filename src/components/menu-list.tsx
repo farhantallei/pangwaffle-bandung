@@ -48,11 +48,6 @@ function ItemCard({ item }: { item: MenuItem }) {
           alt={item.name}
           className="size-full aspect-[4/5] object-cover"
         />
-        {!item.image ? (
-          <Badge className="absolute bottom-2 left-2 bg-muted text-muted-foreground">
-            Coming Soon
-          </Badge>
-        ) : null}
         <Badge
           className={cn(
             "absolute top-2 right-2 bg-accent text-accent-foreground",
