@@ -7,7 +7,7 @@ export interface OrderForm {
 export interface MenuItem {
   id: string
   name: string
-  image: string
+  image: string | null
   price: number
   category: string
 }

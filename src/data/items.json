@@ -7,6 +7,13 @@
     "category": "Original"
   },
   {
+    "id": "22",
+    "name": "Pang Waffle Lava Cheese",
+    "image": null,
+    "price": 18000,
+    "category": "Original"
+  },
+  {
     "id": "2",
     "name": "Pang Waffle Chocolate",
     "image": "/images/classic_chocolate.jpg",

@@ -44,7 +44,7 @@ function CartItem({ id, quantity }: CartItemType) {
       key={item.id}
       className="flex items-center space-x-3 bg-card p-3 rounded-lg">
       <img
-        src={item.image || "/placeholder.svg"}
+        src={item.image || "/placeholder.png"}
         alt={item.name}
         className="w-16 h-16 object-cover rounded-md"
       />

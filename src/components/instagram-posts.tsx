@@ -46,7 +46,7 @@ export default function InstagramPosts() {
               className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-square relative">
                 <img
-                  src={post.image || "/placeholder.svg"}
+                  src={post.image || "/placeholder.png"}
                   alt="Instagram post"
                   className="w-full h-full object-cover"
                 />
