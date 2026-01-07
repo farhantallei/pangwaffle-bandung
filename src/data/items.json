@@ -4,49 +4,49 @@
     "name": "Pang Waffle Original",
     "image": "/images/classic_original.jpg",
     "price": 17000,
-    "category": "Original"
+    "category": "Authentic"
   },
   {
     "id": "22",
     "name": "Pang Waffle Lava Cheese",
-    "image": null,
+    "image": "/images/classic_lava_cheese.jpeg",
     "price": 18000,
-    "category": "Original"
+    "category": "Authentic"
   },
   {
     "id": "2",
     "name": "Pang Waffle Chocolate",
     "image": "/images/classic_chocolate.jpg",
     "price": 18000,
-    "category": "Original"
+    "category": "Authentic"
   },
   {
     "id": "3",
     "name": "Pang Waffle Srikaya",
     "image": "/images/classic_srikaya.jpg",
     "price": 18000,
-    "category": "Original"
+    "category": "Authentic"
   },
   {
     "id": "4",
     "name": "Pang Waffle Special",
     "image": "/images/classic_special.jpg",
     "price": 18000,
-    "category": "Original"
+    "category": "Authentic"
   },
   {
     "id": "5",
     "name": "Pang Waffle Strawberry",
     "image": "/images/classic_strawberry.jpg",
     "price": 18000,
-    "category": "Original"
+    "category": "Authentic"
   },
   {
     "id": "6",
     "name": "Pang Waffle Mix",
     "image": "/images/classic_mix.jpg",
     "price": 18000,
-    "category": "Original"
+    "category": "Authentic"
   },
   {
     "id": "7",

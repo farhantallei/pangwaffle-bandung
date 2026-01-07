@@ -1,7 +1,7 @@
 import { Button } from "./ui/button"
 import { useFilterContext } from "@/providers/filter-provider"
 
-const categories = ["All", "Original", "Red Velvet", "Pandan", "Ice Cream", "Drinks"]
+const categories = ["All", "Authentic", "Red Velvet", "Pandan", "Ice Cream", "Drinks"]
 
 export default function Categories() {
   const { selectedCategory, setSelectedCategory } = useFilterContext()
